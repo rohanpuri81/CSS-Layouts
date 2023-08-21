@@ -3,62 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d6fbf649d1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Navbar Drop Down</title>
-
+    <title>Layout 4</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #wrapper-div{
+            width: 60%;
+            min-height: 100px;
+            margin: auto;
+        }
+        #logo-nava-div{
+            width: 100%;
+            min-height: 50px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+        }
+        #logo-div{
+            width: 50%;
+            min-height: 50px;
+            float: left;
+            padding-left: 10px;
+            line-height: 50px;
+        }
+        #nav-div{
+            width: 50%;
+            float: right;
+            min-height: 50px;
+            padding-left: 10px;
+            line-height: 50px;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .row{
+            width: 100%;
+            min-height: 100px;
+            margin-left: 2%;
+            margin-bottom: 10px;
+        }
+        .col{
+            width: 20%;
+            min-height: 100px;
+            float: left;
+            background-color: lightblue;
+        }
+        .col:nth-child(2){
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .col:nth-child(3){
+            margin-right: 5%;
+        }
+        .rol{
+            margin-top: 3px;
+            width: 28%;
+            line-height: 150px;
+            text-align: center;
+            min-height: 150px;
+        }
+        footer{
+            width: 100%;
+            min-height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
-    
-    <div class="container">
-        <nav class="flex">
-            <div class="logo">HTT</div>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">PROJECT
-                    <i class="fa-solid fa-sort-down"></i>
-                   </a>
-                   <ul>
-                    <li><a href="#">Hover Effect</a></li>
-                    <li><a href="#">3d Flip Card</a></li>
-                    <li><a href="#">Loader</a></li>
-                    <li><a href="#">hamburger</a></li>
-                    <li><a href="#">digital clock</a></li>
-                    <li><a href="#">css3 slider</a></li>
-                   </ul>
-                </li>
-
-
-                <li><a href="#">Web devlopment
-                    <i class="fa-solid fa-sort-down"></i>
-                </a>
-            
-               <ul>
-                <li><a href="#">Front End
-                    <i class="fa-solid fa-caret-right"></i>
-                </a>
-                 <ul>
-                     <li><a href="#">HTML5</a></li>
-                     <li><a href="#">HTML5</a></li>
-                     <li><a href="#">HTML5</a></li>
-                     <li><a href="#">HTML5</a></li>
-                     <li><a href="#">HTML5</a></li>
-                 </ul>
-                </li>
-                <li><a href="#">Back End
-                    <i class="fa-solid fa-caret-right"></i>
-                </a>
-                 <ul>
-                     <li><a href="#">HTML5</a></li>
-                     <li><a href="#">HTML5</a></li>
-                 </ul>
-                </li>
-               </ul>
-               </li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <div id="wrapper-div" class="clearfix">
+        <div id="logo-nava-div">
+            <div id="logo-div">
+                Logo
+            </div>
+            <div id="nav-div">
+                Navigation
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row clearfix">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row clearfix">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row clearfix">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row clearfix">
+            <div class="col rol"> box</div>
+            <div class="col rol">box</div>
+            <div class="col rol">box</div>
+        </div>
+        <footer>
+            footer
+        </footer>
     </div>
 </body>
 </html>
