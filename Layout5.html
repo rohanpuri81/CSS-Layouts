@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }#wrapper-div{
+            display: flex;
+            flex-direction: column;
+            width: 60%;min-height: 100px;
+            gap: 10px;
+            margin: auto;
+        }
+        #logo-div{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            align-items: center;
+            padding-left: 2%;
+
+        }
+        #nav-div{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: lightgray;
+            align-items: center;
+            min-height: 30px;
+            justify-content: center;
+        }#header-banner{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;
+            min-height: 100px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        #main-div{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 100%;
+            min-height: 400px;
+        }
+        #sidebar-div{
+            display: flex;
+            flex-direction: row;
+            flex-basis:23%;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #bodyarea-div{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 75%;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+        #footer-div{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper-div">
+        <div id="logo-div">
+            Logo
+        </div>
+        <div id="nav-div">
+            Navigation
+        </div>
+        <div id="header-banner">
+            Header/Banner
+        </div>
+        <div id="main-div">
+            <div id="sidebar-div">
+                Sidebar
+            </div>
+            <div id="bodyarea-div">
+                Body Area
+            </div>
+        </div>
+        <div id="footer-div">
+            Footer
+        </div>
+    </div>
+    
+</body>
+</html>
