@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 6</title>
+    <style type="text/css">
+        *{
+            margin:  0;
+            padding: o;
+           box-sizing: border-box;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        #wrapper-div{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            min-height: 100px;
+            margin: auto;
+        }
+        #logo-nav-div{
+            display: flex;
+            min-height: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: lightblue;
+            
+        }
+        #logo-div,#nav-div{
+            display: flex;
+            align-items: center;
+            padding-left: 2%;
+            flex-basis: 50%;
+        
+        }
+        #header-banner-div{
+            display: flex;
+            min-height: 100px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: lightblue;
+        }
+        #intro-div{
+            width: 100%;
+            display: flex;
+            background-color: lightblue;
+            min-height: 80px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #boxes-div{
+            display: flex;
+            min-height: 200px;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        .box{
+            flex-basis: 31%;
+            background-color: lightblue;
+        }
+        footer{
+            background-color: lightblue;
+            display: flex;
+            min-height: 35px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper-div">
+        <div id="logo-nav-div">
+            <div id="logo-div">
+                Logo
+            </div>
+            <div id="nav-div">
+                Navigation
+            </div>
+        </div>
+        <div id="header-banner-div">
+            Header / Banner
+        </div>
+        <div id="intro-div">
+            Intro Text Area
+        </div>
+        <div id="boxes-div">
+           <div class="box">Box1</div>
+           <div class="box">Box2</div>
+           <div class="box">Box3</div>
+        </div>
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
