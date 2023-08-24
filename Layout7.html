@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 7</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        #wrapper-div{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: auto;
+            min-height: 100px;
+
+        }
+        #logo-div{
+            display: flex;
+            flex-direction: row;
+            min-height: 50px;
+            align-items: center;
+            padding-left: 2%;
+            background-color: lightblue;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            min-height: 500px;
+            margin-bottom: 10px;
+
+        }
+        #left-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 23%;
+            padding-top: 20px;
+            background-color: lightblue;
+        }
+        #right-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: 74%;
+        }
+        #header-banner-div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 48%;
+            background-color: lightblue;
+        }
+        #body-area-div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 49%;
+            background-color: lightblue;
+        }
+        footer{
+            display: flex;
+            min-height: 30px;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper-div">
+        <div id="logo-div">
+            Logo
+        </div>
+        <div id="main">
+            <div id="left-div">
+                   <div>Sidebar</div>
+                   <div>Navigation</div>
+            </div>
+            <div id="right-div">
+                <div id="header-banner-div">
+                    Header / Banner
+                </div>
+                <div id="body-area-div">
+                    Body Area
+                </div>
+            </div>
+        </div>
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
